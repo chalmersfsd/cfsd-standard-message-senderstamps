@@ -22,14 +22,16 @@ OpenDLV message : opendlv-standard-message-set-v0.9.7.odvd
 |                                       |     1406     |     asMission     |     sensor     |       0-8       | CANgw  |
 |                                       |     1404     |   asRedyToDrive   |      req       |       1/0       |        |
 |                                       |     1401     |      asState      |      log       |     states      |        |
-|                                       |     1407     |     resStatus     |     sensor     |       0/1       | CANgw  |
-|                                       |     1408     |     resEStop      |     sensor     |      0/128      | CANgw  |
-|                                       |     1409     |    resQuality     |     sensor     |      0-100      | CANgw  |
-|                                       |     1410     |    resButtons     |     sensor     |     1/3/5/7     | CANgw  |
-|                                       |     1499     |   resInitialize   |      req       |    Not Care     |        |
+|                                       |     1407     |     resStatus     |     sensor     |     0/1*[1]     | CANgw  |
+|                                       |     1408     |     resEStop      |     sensor     |    0/128*[1]    | CANgw  |
+|                                       |     1409     |    resQuality     |     sensor     |    0-100*[1]    | CANgw  |
+|                                       |     1410     |    resButtons     |     sensor     |   1/3/5/7*[1]   | CANgw  |
+|                                       |     1499     |   resInitialize   |      req       | Don't Care*[1]  |        |
 | opendlv::proxy::GroundSteeringReading |     1200     | steeringPosition  |      log       |       mm        |        |
 |                                       |     1206     |   rackPosition    |      log       |       mm        |        |
 |    opendlv::proxy::PressureReading    |     1202     |  pressureService  |      log       |       bar       |        |
 |                                       |     1205     | pressureRegulator |      log       |       bar       |        |
 |                                       |     1201     |  pressureEBSLine  |      log       |       bar       |        |
 |                                       |     1203     |  pressureEBSAct   |      log       |       bar       |        |
+
+*[1]: detailed definition see read me at:  https://github.com/chalmersfsd/cfsd-proxy-cangw/tree/cfsd-res
