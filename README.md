@@ -58,5 +58,5 @@ OpenDLV message : opendlv-standard-message-set-v0.9.7.odvd
 |   opendlv::proxy::GeodeticWgs84Reading      |      112     |    geolocation    |   sensor   |       deg       |   imu  |
 |         opendlv::sim::Frame                 |      112     |    eulerAngle     |   sensor   |       deg       |   imu  |
 
-*[1]: detailed definition see read me at:  https://github.com/chalmersfsd/cfsd-proxy-cangw/tree/cfsd-res
+*[1]: detailed definition see read me at:  https://github.com/chalmersfsd/cfsd-proxy-cangw/tree/cfsd-res  
 *[2]: detailed definition see read me at:  https://github.com/chalmersfsd/cfsd-logic-lynx-state-machine/tree/develop
