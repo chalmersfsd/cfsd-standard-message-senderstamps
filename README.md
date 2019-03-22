@@ -9,15 +9,15 @@ OpenDLV message : opendlv-standard-message-set-v0.9.7.odvd
 | :-----------------------------------------: | :----------: | :---------------: | :--------: | :-------------: | ------ |
 |     opendlv::proxy::TorqueRequest           |     1501     |    torqueRight    |    req     |    0~2400cNm    |        |
 |                                             |     1500     |    torqueLeft     |    req     |    0~2400cNm    |        |
-|    opendlv.proxy.WheelSpeedReading          |     1901     |  wheelRareRight   |   sensor   |      Km/h       | CANgw  |
+|    opendlv::proxy::WheelSpeedReading        |     1901     |  wheelRareRight   |   sensor   |      Km/h       | CANgw  |
 |                                             |     1902     |   wheelRareLeft   |   sensor   |      Km/h       | CANgw  |
 |                                             |     1903     |  wheelFrontRight  |   sensor   |      Km/h       | CANgw  |
 |                                             |     1904     |  wheelFrontLeft   |   sensor   |      Km/h       | CANgw  |
-|  opendlv.proxy.PedalPositionReading         |     1901     |       brake       |   sensor   |        %        | CANgw  |
+|  opendlv::proxy::PedalPositionReading       |     1901     |       brake       |   sensor   |        %        | CANgw  |
 |                                             |     1902     |     throttle      |   sensor   |        %        | CANgw  |
 |                                             |     1922     |    brakeFront     |   sensor   |        %        | CANgw  |
 |                                             |     1923     |     brakeRear     |   sensor   |        %        | CANgw  |
-|     opendlv.proxy.VoltageReading            |     1921     |      accSoC       |   sensor   | State of Charge | CANgw  |
+|     opendlv::proxy::VoltageReading          |     1921     |      accSoC       |   sensor   | State of Charge | CANgw  |
 |  opendlv::proxy::SwitchStateReading         |     1924     |     dlStatus      |   sensor   |       0/1       | CANgw  |
 |                                             |     1406     |     asMission     |   sensor   |       0-8       | CANgw  |
 |                                             |     1404     |   asRedyToDrive   |    req     |       1/0       |        |
@@ -39,5 +39,10 @@ OpenDLV message : opendlv-standard-message-set-v0.9.7.odvd
 |                                             |     1201     |  pressureEBSLine  |   sensor   |       bar       | ASNode |
 |                                             |     1203     |  pressureEBSAct   |   sensor   |       bar       | ASNode |
 | opendlv::proxy::PulseWidthModulationRequest |     1341     |  brakeDutyCycle   |   sensor   |    dutyCycles   | ASNode |
+|   opendlv::proxy::AngularVelocityReading    |      112     |  angularVelocity  |   sensor   |      rad/s      |   imu  |
+|    opendlv::proxy::AccelerationReading      |      112     |   acceleration    |   sensor   |      m/s^2      |   imu  |
+|    opendlv::proxy::GroundSpeedReading       |      112     |    groundSpeed    |   sensor   |       m/s       |   imu  |
+|   opendlv::proxy::GeodeticWgs84Reading      |      112     |    geolocation    |   sensor   |       deg       |   imu  |
+|         opendlv::sim::Frame                 |      112     |    eulerAngle     |   sensor   |       deg       |   imu  |
 
 *[1]: detailed definition see read me at:  https://github.com/chalmersfsd/cfsd-proxy-cangw/tree/cfsd-res
