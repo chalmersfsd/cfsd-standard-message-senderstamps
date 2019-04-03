@@ -48,7 +48,8 @@ OpenDLV message : opendlv-standard-message-set-v0.9.7.odvd
 |                                             |     1203     |  pressureEBSAct   |   sensor   |       bar       | ASNode |
 |                                             |     1509     |    brakeTarget    |   sensor   |                 | StateM |
 |                                             |     1510     |    brakeActual    |   sensor   |                 | StateM |
-| opendlv::proxy::PulseWidthModulationRequest |     1341     |  brakeDutyCycle   |    req     |    dutyCycles   |        |
+| opendlv::proxy::PulseWidthModulationRequest |     1340     |  brakeDutyCycle   |    req     |    dutyCycles   | Brake  |
+|                                             |     1341     |  brakeDutyCycle   |    req     |    dutyCycles   | StateM |
 |                                             |     1300     |  blueAssiSignal   |    req     |    dutyCycles   | StateM |
 |                                             |     1320     |   redAssiSignal   |    req     |    dutyCycles   | StateM |
 |                                             |     1321     |  greenAssiSignal  |    req     |    dutyCycles   | StateM |
