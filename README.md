@@ -30,7 +30,6 @@ OpenDLV message : opendlv-standard-message-set-v0.9.7.odvd
 |                                             |     1413     |    steerFault     |   sensor   |      bool       | StateM |
 |                                             |     1414     |     ebsState      |   sensor   |     0-2*[2]     | StateM |
 |                                             |     1415     |   serviceValve    |   sensor   |      bool       | StateM |
-|                                             |     1499     |   resInitialize   |    req     | Don't Care*[1]  |        |
 |                                             |     1049     |       ebsOk       |   sensor   |      bool       | ASNode |
 |                                             |     1112     |   clampExtended   |   sensor   |      bool       | ASNode |
 |                                             |     1115     |       asms        |   sensor   |      bool       | ASNode |
@@ -42,6 +41,7 @@ OpenDLV message : opendlv-standard-message-set-v0.9.7.odvd
 |                                             |     1045     |    compressor     |    req     |      bool       | StateM |
 |                                             |     1066     |  finishedSignal   |    req     |      bool       | StateM |
 |                                             |     1067     |  shutdownSignal   |    req     |      bool       | StateM |
+|                                             |     1099     |   resInitialize   |    req     | Don't Care*[1]  |        |
 |    opendlv::proxy::GroundSteeringReading    |     1200     | steeringPosition  |   sensor   |       mm        | ASNode |
 |                                             |     1206     |   rackPosition    |   sensor   |       mm        | ASNode |
 |       opendlv::proxy::PressureReading       |     1202     |  pressureService  |   sensor   |       bar       | ASNode |
