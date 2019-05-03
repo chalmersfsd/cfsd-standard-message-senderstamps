@@ -7,8 +7,10 @@ OpenDLV message : opendlv-standard-message-set-v0.9.7.odvd
 
 |               OpenDLV message               | sender stamp |    msg content    | sensor/req |      unit       | origin |
 | :-----------------------------------------: | :----------: | :---------------: | :--------: | :-------------: | ------ |
-|        opendlv::proxy::TorqueRequest        |     1501     |    torqueRight    |    req     |    0~2400cNm    |        |
-|                                             |     1500     |    torqueLeft     |    req     |    0~2400cNm    |        |
+|        opendlv::proxy::TorqueRequest        |     1503     |    torqueRight    |    req     |    0~2400cNm    | StateM |
+|                                             |     1502     |    torqueLeft     |    req     |    0~2400cNm    | StateM |
+|                                             |     1501     |    torqueRight    |    req     |    0~2400cNm    |longCtrl|
+|                                             |     1500     |    torqueLeft     |    req     |    0~2400cNm    |longCtrl|
 |      opendlv::proxy::WheelSpeedReading      |     1901     |  wheelRareRight   |   sensor   |      Km/h       | CANgw  |
 |                                             |     1902     |   wheelRareLeft   |   sensor   |      Km/h       | CANgw  |
 |                                             |     1903     |  wheelFrontRight  |   sensor   |      Km/h       | CANgw  |
