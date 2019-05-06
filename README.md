@@ -2,6 +2,7 @@ CANgw - res  cfsd-standered-message-senderstamps
 
 This is a repository for organizing the various assignments of sender stamps. 
 
+
 Rules of the Sender Stamp:
 
 ​	If it is a **sensor** data, The sender stamp offset is set by mapping from **origin** microservices
@@ -17,7 +18,7 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |               OpenDLV message               | sender stamp |      msg content       | sensor/req |      unit       | origin      | Desitnation |
 | :-----------------------------------------: | :----------: | :--------------------: | :--------: | :-------------: | ----------- | ----------- |
 |    opendlv::cfsdProxy::TorqueRequestDual    |     1910     | torqueLeft&torqueRight |    req     |    0~2400cNm    | StateM      | CANgw-Lynx  |
-|                                             |     1911     | torqueLeft&torqueRight |    req     |    0~2400cNm    | longCtrl    | CANgw-Lynx  |
+|                                             |     2101     | torqueLeft&torqueRight |    req     |    0~2400cNm    | longCtrl    | StateM      |
 |      opendlv::proxy::WheelSpeedReading      |     1901     |     wheelRareRight     |   sensor   |      Km/h       | CANgw-Lynx  |             |
 |                                             |     1902     |     wheelRareLeft      |   sensor   |      Km/h       | CANgw-Lynx  |             |
 |                                             |     1903     |    wheelFrontRight     |   sensor   |      Km/h       | CANgw-Lynx  |             |
@@ -57,9 +58,8 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |                                             |     1205     |   pressureRegulator    |   sensor   |       bar       | ASNode      |             |
 |                                             |     1201     |    pressureEBSLine     |   sensor   |       bar       | ASNode      |             |
 |                                             |     1203     |     pressureEBSAct     |   sensor   |       bar       | ASNode      |             |
-|                                             |     1509     |      brakeTarget       |   sensor   |                 | StateM      |             |
-|                                             |     1510     |      brakeActual       |   sensor   |                 | StateM      |             |
-| opendlv::proxy::PulseWidthModulationRequest |     1350     |     brakeDutyCycle     |    req     |   dutyCycles    | Brake       | ASNode      |
+|                                             |     1509     |      brakeTarget       |   sensor   |                 | ?           |             |
+| opendlv::proxy::PulseWidthModulationRequest |     2150     |     brakeDutyCycle     |    req     |   dutyCycles    | Brake       | StateM      |
 |                                             |     1341     |     brakeDutyCycle     |    req     |   dutyCycles    | StateM      | ASNode      |
 |                                             |     1300     |     blueAssiSignal     |    req     |   dutyCycles    | StateM      | ASNode      |
 |                                             |     1320     |     redAssiSignal      |    req     |   dutyCycles    | StateM      | ASNode      |
