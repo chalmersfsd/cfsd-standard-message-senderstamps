@@ -54,6 +54,7 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |                                             |     1904     |     asReadyToDrive     |    req     |       1/0       | StateM      | CANgw-Lynx  |
 |    opendlv::proxy::GroundSteeringReading    |     1200     |    steeringPosition    |   sensor   |       mm        | ASNode      |             |
 |                                             |     1206     |      rackPosition      |   sensor   |       mm        | ASNode      |             |
+|      opendlv::proxy::GroundSpeedRequest     |     2201     |      speedRequest      |    req     |       m/s       | velPlan     |  longctrl   |
 |       opendlv::proxy::PressureReading       |     1202     |    pressureService     |   sensor   |       bar       | ASNode      |             |
 |                                             |     1205     |   pressureRegulator    |   sensor   |       bar       | ASNode      |             |
 |                                             |     1201     |    pressureEBSLine     |   sensor   |       bar       | ASNode      |             |
