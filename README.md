@@ -87,5 +87,5 @@ Sender Stamps Mapping:
 | logic    | StateMachine        | 2100   |
 |          | longCtrl            | 2200   |
 |          | Brake               | 2300   |
-|          |                     |        |
+|          | velPlan             | 2400   |
 
