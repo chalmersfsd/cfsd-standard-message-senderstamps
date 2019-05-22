@@ -88,4 +88,6 @@ Sender Stamps Mapping:
 |          | longCtrl            | 2200   |
 |          | Brake               | 2300   |
 |          | velPlan             | 2400   |
+|          | pathPlan            | 2600   |
+|          | aimPoint            | 2700   |
 
