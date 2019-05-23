@@ -98,5 +98,6 @@ Sender Stamps Mapping:
 |          | Brake               | 2300   |
 |          | velPlan             | 2400   |
 |          | SLAM                | 2500   |
-|          | pathPlanner         | 2600   |
+|          | pathPlan            | 2600   |
+|          | aimPoint            | 2700   |
 
