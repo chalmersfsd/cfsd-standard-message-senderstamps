@@ -54,7 +54,7 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |                                             |     1904     |     asReadyToDrive     |    req     |       1/0       | StateM      | CANgw-Lynx  |
 |    opendlv::proxy::GroundSteeringReading    |     1200     |    steeringPosition    |   sensor   |       mm        | ASNode      |             |
 |                                             |     1206     |      rackPosition      |   sensor   |       mm        | ASNode      |             |
-|      opendlv::proxy::GroundSpeedRequest     |     2201     |      speedRequest      |    req     |       m/s       | velPlan     |  longctrl   |
+|     opendlv::proxy::GroundSpeedRequest      |     2201     |      speedRequest      |    req     |       m/s       | velPlan     | longctrl    |
 |       opendlv::proxy::PressureReading       |     1202     |    pressureService     |   sensor   |       bar       | ASNode      |             |
 |                                             |     1205     |   pressureRegulator    |   sensor   |       bar       | ASNode      |             |
 |                                             |     1201     |    pressureEBSLine     |   sensor   |       bar       | ASNode      |             |
@@ -70,6 +70,15 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |     opendlv::proxy::GroundSpeedReading      |     112      |      groundSpeed       |   sensor   |       m/s       | imu         |             |
 |    opendlv::proxy::GeodeticWgs84Reading     |     112      |      geolocation       |   sensor   |       deg       | imu         |             |
 |             opendlv::sim::Frame             |     112      |       eulerAngle       |   sensor   |       deg       | imu         |             |
+|        opendlv::sim::KinematicState         |     2501     |        velocity        |   sensor   |       m/s       | SLAM        |             |
+|             opendlv::sim::Frame             |     2501     |          pose          |   sensor   |    m,degree     | SLAM        |             |
+|  opendlv.logic.perception.ObjectFrameStart  |              |                        |            |                 |             |             |
+|   opendlv.logic.perception.ObjectFrameEnd   |              |                        |            |                 |             |             |
+|       opendlv.logic.perception.Object       |              |                        |            |                 |             |             |
+|     opendlv.logic.perception.ObjectType     |              |                        |            |                 |             |             |
+|   opendlv.logic.perception.ObjectPosition   |              |                        |            |                 |             |             |
+|  opendlv.logic.sensation.Equilibrioception  |              |                        |            |                 |             |             |
+|       opendlv.logic.action.LocalPath        |     2601     |          path          |            |                 | pathPlanner |             |
 
 *[1]: detailed definition see read me at:  https://github.com/chalmersfsd/cfsd-proxy-cangw/tree/cfsd-res  
 *[2]: detailed definition see read me at:  https://github.com/chalmersfsd/cfsd-logic-lynx-state-machine/tree/develop
@@ -88,4 +97,6 @@ Sender Stamps Mapping:
 |          | longCtrl            | 2200   |
 |          | Brake               | 2300   |
 |          | velPlan             | 2400   |
+|          | SLAM                | 2500   |
+|          | pathPlanner         | 2600   |
 
