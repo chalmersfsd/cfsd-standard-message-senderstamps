@@ -54,8 +54,7 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |                                             |     1904     |     asReadyToDrive     |    req     |       1/0       | StateM      | CANgw-Lynx  |
 |    opendlv::proxy::GroundSteeringReading    |     1200     |    steeringPosition    |   sensor   |       mm        | ASNode      |             |
 |                                             |     1206     |      rackPosition      |   sensor   |       mm        | ASNode      |             |
-|   opendlv::proxy::GroundSteeringRequest     |     2102     |     steeringRequest    |    req     |      rad        | aimPoint    |  StateM     |
-|                                             |     2801     |     steeringRequest    |    req     |      rad        | StateM      |  latCtrl    |
+|   opendlv::proxy::GroundSteeringRequest     |     2801     |     steeringRequest    |    req     |      rad        | aimPoint    |  latCtrl    |
 |     opendlv::proxy::GroundSpeedRequest      |     2201     |      speedRequest      |    req     |       m/s       | velPlan     |  longCtrl   |
 |       opendlv::proxy::PressureReading       |     1202     |    pressureService     |   sensor   |       bar       | ASNode      |             |
 |                                             |     1205     |   pressureRegulator    |   sensor   |       bar       | ASNode      |             |
@@ -67,6 +66,7 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |                                             |     1300     |     blueAssiSignal     |    req     |   dutyCycles    | StateM      | ASNode      |
 |                                             |     1320     |     redAssiSignal      |    req     |   dutyCycles    | StateM      | ASNode      |
 |                                             |     1321     |    greenAssiSignal     |    req     |   dutyCycles    | StateM      | ASNode      |
+|                                             |     1340     |   steeringDutyCycle    |    req     |   dutyCycles    | latCtrl     | ASNode      |
 |   opendlv::proxy::AngularVelocityReading    |     112      |    angularVelocity     |   sensor   |      rad/s      | imu         |             |
 |     opendlv::proxy::AccelerationReading     |     112      |      acceleration      |   sensor   |      m/s^2      | imu         |             |
 |     opendlv::proxy::GroundSpeedReading      |     112      |      groundSpeed       |   sensor   |       m/s       | imu         |             |
