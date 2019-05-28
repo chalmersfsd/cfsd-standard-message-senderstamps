@@ -29,9 +29,9 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |                                             |     1923     |       brakeRear        |   sensor   |        %        | CANgw-Lynx  |             |
 |       opendlv::proxy::VoltageReading        |     1921     |         accSoC         |   sensor   | State of Charge | CANgw-Lynx  |             |
 |     opendlv::proxy::SwitchStateReading      |     1924     |        dlStatus        |   sensor   |       0/1       | CANgw-Lynx  |             |
-|                                             |     1906     |       asMission        |   sensor   |       0-8       | CANgw-Lynx  |             |
+|                                             |     1906     |       asMission        |   sensor   |     0-8*[2]     | CANgw-Lynx  |             |
 |                                             |     2105     |        ebsFault        |   sensor   |      bool       | StateM      |             |
-|                                             |     2101     |        asState         |   sensor   |   states*[2]    | StateM      |             |
+|                                             |     2101     |        asState         |   sensor   |     0-5*[2]     | StateM      |             |
 |                                             |     1801     |       resStatus        |   sensor   |     0/1*[1]     | CANgw - res |             |
 |                                             |     1802     |        resEStop        |   sensor   |    0/128*[1]    | CANgw - res |             |
 |                                             |     1803     |       resQuality       |   sensor   |    0-100*[1]    | CANgw - res |             |
