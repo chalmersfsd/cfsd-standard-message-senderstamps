@@ -45,6 +45,7 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |                                             |   (unset)    |      tsActivated       |   sensor   |      bool       | ASNode      |             |
 |                                             |     1916     |         KnobR          |   sensor   |    1-12 int     | CANgw-Lynx  |             |
 |                                             |     1917     |         NnobL          |   sensor   |    1-12 int     | CANgw-Lynx  |             |
+|                                             |     1917     |      missionState      |   sensor   |    0-4 int      | MissionCtrl |             |
 |     opendlv::proxy::SwitchStateRequest      |     1044     |       ebsSpeaker       |    req     |      bool       | StateM      |             |
 |                                             |     1027     |       heartBeat        |    req     |      bool       | StateM      |             |
 |                                             |     1045     |       compressor       |    req     |      bool       | StateM      |             |
@@ -103,4 +104,4 @@ Sender Stamps Mapping:
 |          | pathPlan            | 2600   |
 |          | aimPoint            | 2700   |
 |          | latCtrl             | 2800   |
-
+|          | MissionCtrl         | 2900   |
