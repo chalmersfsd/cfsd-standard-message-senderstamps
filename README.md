@@ -71,7 +71,8 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |   opendlv::proxy::AngularVelocityReading    |     112      |    angularVelocity     |   sensor   |      rad/s      | imu         |             |
 |     opendlv::proxy::AccelerationReading     |     112      |      acceleration      |   sensor   |      m/s^2      | imu         |             |
 |     opendlv::proxy::GroundSpeedReading      |     112      |      groundSpeed       |   sensor   |       m/s       | imu         |             |
-|                                             |     2500     |      groundSpeed       |   sensor   |       m/s       | SLAM       |             |
+|                                             |     2500     |      groundSpeed       |   sensor   |       m/s       | SLAM        |             |
+|                                             |     3000     |      groundSpeed       |   sensor   |       m/s       | speedEst    |             |
 |    opendlv::proxy::GeodeticWgs84Reading     |     112      |      geolocation       |   sensor   |       deg       | imu         |             |
 |             opendlv::sim::Frame             |     112      |       eulerAngle       |   sensor   |       deg       | imu         |             |
 |        opendlv::sim::KinematicState         |     2501     |        velocity        |   sensor   |       m/s       | SLAM        |             |
@@ -106,3 +107,4 @@ Sender Stamps Mapping:
 |          | aimPoint            | 2700   |
 |          | latCtrl             | 2800   |
 |          | MissionCtrl         | 2900   |
+|          | Speed estimation    | 3000   |
