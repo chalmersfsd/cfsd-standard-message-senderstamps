@@ -84,6 +84,8 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |   opendlv.logic.perception.ObjectPosition   |              |                        |            |                 |             |             |
 |  opendlv.logic.sensation.Equilibrioception  |              |                        |            |                 |             |             |
 |       opendlv.logic.action.LocalPath        |     2601     |          path          |            |                 | pathPlanner |             |
+|       opendlv::proxy::TorqueRequest         |     2102     |       torqueLeft       |    req     |    0~2400cNm    | longCtrl    |             |
+|                                             |     2103     |       torqueRight      |    req     |    0~2400cNm    | longCtrl    |             |
 
 *[1]: detailed definition see read me at:  https://github.com/chalmersfsd/cfsd-proxy-cangw/tree/cfsd-res  
 *[2]: detailed definition see read me at:  https://github.com/chalmersfsd/cfsd-logic-lynx-state-machine/tree/develop
