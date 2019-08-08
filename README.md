@@ -72,11 +72,13 @@ cfsd extended message: cfsd-extended-message-set-v0.0.1.odvd
 |                                             |     1340     |    steeringDutyCycle    |    req     |   dutyCycles    | latCtrl     | ASNode      |
 |   opendlv::proxy::AngularVelocityReading    |     112      |     angularVelocity     |   sensor   |      rad/s      | imu         |             |
 |     opendlv::proxy::AccelerationReading     |     112      |      acceleration       |   sensor   |      m/s^2      | imu         |             |
-|     opendlv::proxy::GroundSpeedReading      |     112      |       groundSpeed       |   sensor   |       m/s       | imu         |             |
-|                                             |     2500     |       groundSpeed       |   sensor   |       m/s       | SLAM        |             |
+|    opendlv::proxy::GeodeticWgs84Reading     |     112      |       geolocation       |   sensor   |       deg       | imu (gps)   |             |
+|     opendlv::proxy::GroundSpeedReading      |     112      |       groundSpeed       |   sensor   |       m/s       | imu (gps)   |             |
+|                                             |     113      |       groundSpeed       |   sensor   |       m/s       | SLAM (ekf)   |             |
+|                                             |     2500     |       groundSpeed       |   sensor   |       m/s       | SLAM         |             |
 |                                             |     3000     |       groundSpeed       |   sensor   |       m/s       | speedEst    |             |
-|    opendlv::proxy::GeodeticWgs84Reading     |     112      |       geolocation       |   sensor   |       deg       | imu         |             |
-|             opendlv::sim::Frame             |     112      |       eulerAngle        |   sensor   |       deg       | imu         |             |
+|             opendlv::sim::Frame             |     113      |       eulerAngle        |   sensor   |       deg       | imu (ekf)   |             |
+|    opendlv::logic::sensation::Geolocation   |     113      |       geolocation       |   sensor   |       deg       | imu (ekf)   |             |
 |        opendlv::sim::KinematicState         |     2501     |        velocity         |   sensor   |       m/s       | SLAM        |             |
 |             opendlv::sim::Frame             |     2501     |          pose           |   sensor   |    m,degree     | SLAM        |             |
 |  opendlv.logic.perception.ObjectFrameStart  |              |                         |            |                 |             |             |
